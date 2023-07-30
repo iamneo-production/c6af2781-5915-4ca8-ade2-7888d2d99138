@@ -27,7 +27,7 @@ where year=2004
 group by ST_NAME;
 --end
 
---five
+--five --
 select PARTYNAME, sum(TOTVOTPOLL)
 as TotalVotes from election
 where year=2014 and ST_NAME='UTTAR PRADESH'
