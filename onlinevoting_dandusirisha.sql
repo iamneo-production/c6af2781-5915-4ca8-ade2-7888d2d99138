@@ -5,7 +5,7 @@ where cand_sex='F'
 group by year;
 --end
 
--two
+--two
 SELECT ST_NAME, YEAR, COUNT(*) AS TotalCandidates FROM ELECTION
 GROUP BY ST_NAME, YEAR;
 --end
