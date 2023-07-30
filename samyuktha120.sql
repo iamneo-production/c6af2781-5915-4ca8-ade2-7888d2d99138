@@ -13,8 +13,8 @@ select ST_NAME, count(*) as Total_candidates from ELECTION
 where year=2004 
 group by st_name;
 
-select PARTYNAME,SUM(TOTVOTPOLL) as total_vot from ELECTION
+select PARTYNAME,SUM(TOTVOTPOLL) as total_vote from ELECTION
 where year=2014 and st_name='UTTAR PRADESH' 
 group by PARTYNAME
-order by total_vot DESC
+order by total_vote DESC
 FETCH First 5 rows only;
