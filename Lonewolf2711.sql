@@ -1,4 +1,4 @@
---one
+
 Select year,Count(*) AS Fem_Candid_Count
 from election
 where cand_sex='F'
@@ -11,12 +11,14 @@ GROUP BY ST_NAME, YEAR;
 --end
 
 --three
+
 SELECT ST_NAME, SUM(TOTVOTPOLL) AS Tot_Vot FROM ELECTION
 WHERE YEAR = 1987 AND PARTYNAME = 'BJP'
 GROUP BY ST_NAME;
 --end
 
 --four
+
 SELECT ST_NAME, COUNT(*) AS Tot_Cand
 FROM ELECTION
 WHERE YEAR = 2004
