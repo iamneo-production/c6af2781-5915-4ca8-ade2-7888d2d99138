@@ -5,7 +5,7 @@ group by year;
 select st_name,year,count(*) as tot_candidates from ELECTION
 group by st_name,year;
 
-select ST_NAME,sum(TOTVOTPOLL) as Tot_votes From ELECTION 
+select ST_NAME,sum(TOTVOTPOLL) as Total_votes From ELECTION 
 where year=1987 and partyname='BJP'
 group by st_name;
 
