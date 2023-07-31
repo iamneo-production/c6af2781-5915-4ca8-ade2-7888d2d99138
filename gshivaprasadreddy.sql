@@ -1,10 +1,10 @@
 desc ELECTION;
---one
+--one--
 SELECT YEAR, SUM(CASE WHEN CAND_SEX = 'F' THEN 1 ELSE 0 END) AS FemaleCandidateCount
 FROM ELECTION
 GROUP BY YEAR;
 
---twos
+--twos--
 select ST_NAME, year, Count(*)
 as TotalCandidates from election
 group by ST_NAME, year;
