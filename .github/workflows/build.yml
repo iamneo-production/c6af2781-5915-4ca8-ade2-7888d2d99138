@@ -23,6 +23,7 @@ jobs:
       - name: Build and analyze
         env:
 <<<<<<< HEAD
+<<<<<<< HEAD
           GITHUB_TOKEN: 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
           SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
 =======
@@ -41,3 +42,7 @@ jobs:
 =======
 >>>>>>> Oracle-Workspace-dandusirisha1010
 >>>>>>> 598353bc7eb6c6e80c82d70a42a59cf73bd4bfea
+=======
+          GITHUB_TOKEN: 1f06796f-2e03-4530-a21d-ef77cdbee8df
+          SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
+>>>>>>> 7c394787a022d078b5fa19a149b5e0d60e556c4a
