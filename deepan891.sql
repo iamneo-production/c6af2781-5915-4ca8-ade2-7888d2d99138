@@ -23,4 +23,5 @@ group by PARTYNAME
 order by tot_vot_ DESC
 FETCH first 5 rows only;
 
+
 --
