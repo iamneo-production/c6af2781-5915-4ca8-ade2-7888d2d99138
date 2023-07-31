@@ -1,5 +1,5 @@
 --one
-Select year,Count(*) AS Fem_Candid_Count
+Select year,Count(*) AS Fem_Candidate_Count
 from election
 where cand_sex='F'
 group by year;
