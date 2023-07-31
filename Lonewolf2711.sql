@@ -30,4 +30,8 @@ WHERE YEAR = 2014 AND ST_NAME = 'UTTAR PRADESH'
 GROUP BY PARTYNAME
 ORDER BY TotalVotes DESC
 Fetch First 5 rows only;
+<<<<<<< HEAD
 --end
+=======
+--end
+>>>>>>> 8b6d5206cdab2b77bde94baa554faee3a8a95569
