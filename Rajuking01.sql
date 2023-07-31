@@ -1,7 +1,6 @@
 --1
 select year,count(*) as males from election
-where cand_sex='F'
-group by year;
+where cand_sex='F' group by year;
 
 --2
 SELECT ST_NAME,YEAR,COUNT(*)AS numberofcandidates from ELECTION
