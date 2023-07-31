@@ -5,7 +5,7 @@ where cand_sex='F'
 group by year;
 --end
 
---two
+--twoo
 SELECT ST_NAME, YEAR, COUNT(*) AS Tot_Cand FROM ELECTION
 GROUP BY ST_NAME, YEAR;
 --end
