@@ -6,7 +6,7 @@ where cand_sex='F'
 group by year;
 --end
 
---two
+--twos
 select ST_NAME, year, Count(*)
 as Total_Candidates from election
 group by ST_NAME, year;
