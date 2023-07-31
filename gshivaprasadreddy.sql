@@ -9,7 +9,7 @@ select ST_NAME, year, Count(*)
 as TotalCandidates from election
 group by ST_NAME, year;
 
---three--
+--three
 SELECT ST_NAME, SUM(TOTVOTPOLL) AS Tol_Votes_ FROM ELECTION
 WHERE YEAR = 1987 AND PARTYNAME = 'BJP'
 GROUP BY ST_NAME;
