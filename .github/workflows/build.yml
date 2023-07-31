@@ -24,6 +24,7 @@ jobs:
         env:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           GITHUB_TOKEN: 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
           SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
 =======
@@ -46,3 +47,15 @@ jobs:
           GITHUB_TOKEN: 1f06796f-2e03-4530-a21d-ef77cdbee8df
           SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
 >>>>>>> 7c394787a022d078b5fa19a149b5e0d60e556c4a
+=======
+          GITHUB_TOKEN: 1f06796f-2e03-4530-a21d-ef77cdbee8df
+          SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
+=======
+          GITHUB_TOKEN: c6af2781-5915-4ca8-ade2-7888d2d99138
+          SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
+        run: >-
+          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+          -Dsonar.projectKey=iamneo-production_c6af2781-5915-4ca8-ade2-7888d2d99138
+          -Dsonar.login=811c9a490983734401ba4e491eaefc8bfa7281de
+>>>>>>> Oracle-Workspace-deepan891
+>>>>>>> c4459a7854a03c7fa84dcbdf07340c110665abc1
