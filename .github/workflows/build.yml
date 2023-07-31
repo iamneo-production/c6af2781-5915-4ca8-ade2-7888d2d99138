@@ -2,7 +2,7 @@ name: Build
 'on':
   push:
     branches:
-      - '*'
+      - main
   pull_request:
     types:
       - opened
@@ -24,5 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: e278d582-58de-428f-a439-4088712b246b
           SONAR_TOKEN: 811c9a490983734401ba4e491eaefc8bfa7281de
-        run: >-
-          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=iamneo-production_e278d582-58de-428f-a439-4088712b246b -Dsonar.login=811c9a490983734401ba4e491eaefc8bfa7281de
+       run: >-
+          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+          -Dsonar.projectKey=iamneo-production_e278d582-58de-428f-a439-4088712b246b
+          -Dsonar.login=811c9a490983734401ba4e491eaefc8bfa7281de
