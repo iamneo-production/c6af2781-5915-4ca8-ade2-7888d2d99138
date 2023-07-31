@@ -22,3 +22,5 @@ where year=2014 and st_name='TELANGANA'
 group by PARTYNAME
 order by tot_vot_ DESC
 FETCH first 5 rows only;
+
+--
