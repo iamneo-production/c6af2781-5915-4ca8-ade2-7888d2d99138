@@ -34,4 +34,5 @@ where year=2014 and ST_NAME='UTTAR PRADESH'
 group by PARTYNAME
 order by Total_Votes desc
 fetch first 5 rows only;
+
 --end
