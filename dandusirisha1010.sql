@@ -1,37 +1,24 @@
---ONE
-SELECT YEAR, COUNT(*) AS
-FemaleCandidateCount
-from election
-where cand_sex='F'
-group by year;
---end
+--1
+select year,count(*) as females from election
+where cand_sex='F' group by year;
 
---two
-select ST_NAME, year, Count(*)
-as TotalCandidates from election
-group by ST_NAME, year;
---end
+--2
+SELECT ST_NAME,YEAR,COUNT(*)AS numofcandi from ELECTION
+group by st_name, year;
 
---three
-Select ST_NAME, sum(TOTVOTPOLL)
-as TotalVotes from election
-where year=1987 and PARTYNAME='BJP'
-group by ST_NAME;
---end
+--3
+SELECT ST_NAME,sum(totvotpoll) AS Tot_Votes FROM ELECTION
+WHERE YEAR=1987 AND PARTYNAME='BRS'
+GROUP BY ST_NAME;
 
---four--
-select ST_NAME, count(*)
-as TotalCandidates
-from election
+--4
+select st_name, count(*) as tot_candi from election
 where year=2004
-group by ST_NAME;
---end
+group by st_name;
 
---five --
-select PARTYNAME, sum(TOTVOTPOLL)
-as TotalVotes from election
-where year=2014 and ST_NAME='UTTAR PRADESH'
+--5
+select partyname,sum(totvotpoll) as tot_vot from ELECTION
+where year=2014 and st_name='TELANGANA'
 group by PARTYNAME
-order by TotalVotes desc
-fetch first 5 rows only;
---end
+order by total_vot DESC
+FETCH first 5 rows only;
