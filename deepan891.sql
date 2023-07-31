@@ -20,5 +20,5 @@ group by st_name;
 select partyname,sum(totvotpoll) as tot_al_vot_ from ELECTION
 where year=2014 and st_name='TELANGANA'
 group by PARTYNAME
-order by total_vot DESC
+order by tot_al_vot_ DESC
 FETCH first 5 rows only;
