@@ -19,7 +19,7 @@ where year=1987 and PARTYNAME='BJP'
 group by ST_NAME;
 --end
 
---four
+--four--
 select ST_NAME, count(*)
 as TotalCandidates
 from election
