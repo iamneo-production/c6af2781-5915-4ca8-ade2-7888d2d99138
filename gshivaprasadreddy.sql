@@ -8,6 +8,7 @@ group by year;
 
 --twos
 select ST_NAME, year, Count(*)
+<<<<<<< HEAD
 as Total_Candidates from election
 group by ST_NAME, year;
 --end
@@ -18,6 +19,30 @@ as Total_Votes from election
 where year=1987 and PARTYNAME='BJP'
 group by ST_NAME;
 --end
+=======
+as TotalCandidates from election
+group by ST_NAME, year;
+
+--three
+SELECT ST_NAME, SUM(TOTVOTPOLL) AS Tol_Votes_ FROM ELECTION
+WHERE YEAR = 1987 AND PARTYNAME = 'BJP'
+GROUP BY ST_NAME;
+
+--fourth
+SELECT ST_NAME, COUNT(*) AS Ttol_Candi_
+FROM ELECTION
+WHERE YEAR = 2004
+GROUP BY ST_NAME;
+
+
+--fifth--
+SELECT PARTYNAME, SUM(TOTVOTPOLL) AS Tol_Vot
+FROM ELECTION
+WHERE ST_NAME = 'UTTAR PRADESH' AND YEAR = 2014
+GROUP BY PARTYNAME
+ORDER BY Tol_Vot DESC
+FETCH FIRST 5 ROWS ONLY;
+>>>>>>> 55b80130a9199f3c8b3b82df1966370899c70f55
 
 --four
 select ST_NAME, count(*)
